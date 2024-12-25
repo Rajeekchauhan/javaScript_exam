@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page with CRUD Operations</title>
+  
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Product Page with CRUD Operations</h1>
+
+    <div class="product-form">
+        <input type="text" id="product-title" placeholder="Title">
+        <input type="number" id="product-price" placeholder="Price">
+        <input type="text" id="product-image" placeholder="Image URL">
+        <select id="product-category">
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Books">Books</option>
+        </select>
+        <button onclick="addProduct()" style="background-color: rgb(73, 73, 248); color: WHITE;">Add Product</button>
+    </div>
+
+
+    <h1>Filter</h1>
+    <div class="filters">
+
+        <input type="text" id="search-title" placeholder="Search by Title" oninput="searchProduct()">
+        <button onclick="sortProducts('asc')">Sort by Price: Low to High</button>
+        <button onclick="sortProducts('desc')">Sort by Price: High to Low</button>
+        <select id="filter-category" onchange="filterProducts()">
+            <option value="">All Categories</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Books">Books</option>
+        </select>
+    </div>
+    <h1>
+        Product List
+    </h1>
+    <div class="product-list" id="product-list"></div>
+
+  
+    <script src="script.js"></script>
+
+</body>
+
+</html>

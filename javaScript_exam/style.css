@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    
+}
+
+.product-form {
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-form input,
+.product-form select,
+.product-form button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 50px;
+    letter-spacing: 2.5PX;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    border: 1px solid #000000;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.filters {
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filters input,
+.filters select,
+.filters button {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 50px;
+    letter-spacing: 2.5PX;
+    text-align: center;
+
+}
+
+.filters select {
+    background-color: rgb(73, 73, 248);
+    color: white;
+}
+
+#edit {
+    height: 25px;
+    width: 70px;
+    background-color: #008f11;
+    color: white;
+}
+
+#del {
+    height: 25px;
+    width: 70px;
+    background-color: #d40000;
+    color: white;
+
+}
